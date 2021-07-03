@@ -22,8 +22,10 @@ input.onButtonPressed(Button.B, function () {
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     if (secretstring == "aabbbaab") {
         soundExpression.happy.play()
+        basic.showIcon(IconNames.Yes)
     } else {
         soundExpression.sad.play()
+        basic.showIcon(IconNames.No)
     }
     secretstring = ""
 })
